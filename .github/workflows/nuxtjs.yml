@@ -56,16 +56,6 @@ jobs:
         with:
           node-version: "16"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
-  
-      - name: 배포 자동화
-        uses: appleboy/scp-action@master
-        with:
-          host: ${{ secrets.LIGHTSAIL_PUBLIC_IP }}
-          username: ${{env.LIGHTSAIL_USERNAME}}
-          key: ${{ secrets.LIGHTSAIL_SSH_KEY }}
-          # source: 'dist/*'
-          strip_components: 1
-          target: '/home/ubuntu/OTGF'
 
       - name: Restart PM2 process
         uses: appleboy/ssh-action@master

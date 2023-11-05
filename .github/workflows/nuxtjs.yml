@@ -56,6 +56,9 @@ jobs:
         with:
           node-version: "16"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
+          
+      - name: Pull the content
+        run: git pull
 
       - name: Restart PM2 process
         uses: appleboy/ssh-action@master

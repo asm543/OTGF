@@ -50,6 +50,9 @@ jobs:
         
       - name: Checkout
         uses: actions/checkout@v3
+
+      - name: 확인해보기
+        run: cat .github/workflows/nuxtjs.yml
       
       - name: Setup Node
         uses: actions/setup-node@v3

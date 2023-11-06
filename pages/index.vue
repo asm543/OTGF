@@ -10,7 +10,7 @@
           Welcome to the Vuetify + Nuxt.js template mytest
         </v-card-title>
         <v-card-text>
-          <p>테스트2번째</p>
+          <p>테스트3번째</p>
           <p>
             For more information on Vuetify, check out the <a
               href="https://vuetifyjs.com"

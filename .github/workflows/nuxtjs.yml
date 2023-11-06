@@ -32,6 +32,8 @@ jobs:
         
       - name: Checkout
         uses: actions/checkout@v3
+        with: 
+          path: our-source
 
       - name: 확인해보기
         run: cat .github/workflows/nuxtjs.yml

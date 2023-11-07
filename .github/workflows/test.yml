@@ -15,6 +15,9 @@ jobs:
       - name: checkout release
         uses: actions/checkout@v3
 
+      - name: npm build
+        uses: npm run build
+
       - name: compress
         run: tar cvfz ./$GITHUB_SHA.tar.gz *
         shell: bash

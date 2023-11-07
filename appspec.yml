@@ -11,10 +11,10 @@ permissions:
     owner: ubuntu
     group: ubuntu
     mode: 755
-// hooks:
-//  BeforeInstall:
-//    - location: deploy-before.sh
-//      runas: ubuntu
+    hooks:
+      AfterInstall:
+        - location: deploy-after.sh
+          runas: ubuntu
 //   ApplicationStart:
 //     - location: deploy.sh
 //       runas: ubuntu

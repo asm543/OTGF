@@ -36,4 +36,5 @@ jobs:
           --application-name OTGFCodeDeploy
           --deployment-config-name CodeDeployDefault.OneAtATime
           --deployment-group-name OTGFDeployGroup
+          --ignore-application-stop-failures
           --s3-location bucket=otgfsbucket,bundleType=tgz,key=$GITHUB_SHA.tar.gz

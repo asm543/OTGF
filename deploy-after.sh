@@ -13,7 +13,7 @@ sudo chown -R $USER:$USER $REPOSITORY
 
 chmod -R u+w $REPOSITORY
 
-npm install
+#npm install
 
 npm run build
 

@@ -1,6 +1,11 @@
 #!/bin/bash
 
-NODE_PATH="/home/ubuntu/.nvm/versions/node/v21.1.0/bin"
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
+# Use correct Node version
+nvm use v21.1.0
+
 REPOSITORY="/home/ubuntu/build"
 
 cd $REPOSITORY

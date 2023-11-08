@@ -10,10 +10,21 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        node-version: [21.1.0]
+
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: checkout release
         uses: actions/checkout@v3
+        
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v4.0.0
+        with:
+          node-version: ${{ matrix.node-version }}
+      
+      - name: Check Npm -v
+        run: npm -v
 
 #      - name: install
 #        run: npm install

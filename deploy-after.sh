@@ -1,5 +1,7 @@
 #!/bin/bash
-REPOSITORY=/home/ubuntu/build
+
+NODE_PATH="/home/ubuntu/.nvm/versions/node/v21.1.0/bin"
+REPOSITORY="/home/ubuntu/build"
 
 cd $REPOSITORY
 

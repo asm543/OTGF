@@ -19,4 +19,4 @@ npm run build
 
 npx kill-port 3000 -y
 
-npm run start
+pm2 restart OTGF
